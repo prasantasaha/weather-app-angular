@@ -1,6 +1,6 @@
 {
   "name": "weather-app-angular",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "src/app/app.module.ts",
   "homepage": "https://github.com/prasantasaha/weather-app-angular",
@@ -10,7 +10,9 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "ng build --prod --base-href=/weather-app-angular/",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
